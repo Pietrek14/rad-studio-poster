@@ -1,0 +1,190 @@
+[
+	{ "class": "TObject", "events": [] },
+	{ "class": "TPersistent", "events": [] },
+	{
+		"class": "TComponent",
+		"events": [
+			{ "name": "OnGetDeltaStreams", "accessModifier": "protected" }
+		]
+	},
+	{
+		"class": "TControl",
+		"events": [
+			{
+				"name": "OnCanResize",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy próbie zmiany rozmiaru kontrolki."
+			},
+			{ "name": "OnClick", "accessModifier": "protected" },
+			{
+				"name": "OnConstrainedResize",
+				"accessModifier": "protected",
+				"description": "Dostosowuje ograniczenia zmiany rozmiaru kontrolki. Wywoływany od razu po OnCanResize."
+			},
+			{
+				"name": "OnContextPopup",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy otwarciu menu kontekstowego."
+			},
+			{ "name": "OnDblClick", "accessModifier": "protected" },
+			{
+				"name": "OnDragDrop",
+				"accessModifier": "protected",
+				"description": "Wywoływany gdy użytkownik upuści przeciągany obiekt."
+			},
+			{
+				"name": "OnDragOver",
+				"accessModifier": "protected",
+				"description": "Wywoływany gdy użytkownik przeciągnie obiekt nad kontrolkę."
+			},
+			{
+				"name": "OnEndDock",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy zakończeniu przeciągania obiektu przez dokowanie obiektu lub anulowanie przeciągnięcia."
+			},
+			{
+				"name": "OnEndDrag",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy zakończeniu przeciągania obiektu przez upuszczenie obiektu lub anulowanie przeciągnięcia."
+			},
+			{
+				"name": "OnGesture",
+				"accessModifier": "public",
+				"description": "Uruchamiany przy wykonaniu gestu (głównie dla ekranów dotykowych)."
+			},
+			{
+				"name": "OnMouseActivate",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik kliknie na kontrolkę, a formularz nie jest aktywny."
+			},
+			{
+				"name": "OnMouseDown",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnMouseEnter",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnMouseLeave",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnMouseMove",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik przesunie kursor myszy, gdy ten znajduje się nad kontrolką."
+			},
+			{
+				"name": "OnMouseUp",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik puści przycisk myszy, a kursor znajduje się nad kontrolką."
+			},
+			{
+				"name": "OnMouseWheel",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik obróci scroll'em."
+			},
+			{
+				"name": "OnMouseWheelDown",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnMouseWheelUp",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnResize",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy zmianie rozmiaru kontrolki."
+			},
+			{
+				"name": "OnStartDock",
+				"accessModifier": "protected",
+				"description": "Wywoływany przy rozpoczęciu przeciągania obiektu, gdy DragKind jest ustawiony na dkDock."
+			},
+			{
+				"name": "OnStartDrag",
+				"accessModifier": "protected",
+				"description": "Wywoływany przy rozpoczęciu przeciągania obiektu."
+			},
+			{
+				"name": "WindowProc",
+				"accessModifier": "public",
+				"description": "Wskazuje na funkcję obsługującą komunikaty wysyłane do kontrolki."
+			}
+		]
+	},
+	{
+		"class": "TWinControl",
+		"events": [
+			{
+				"name": "OnAlignInsertBefore",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy obiekt z niestandardowym wyrównaniem jest wyrównywany. Określa kolejność wyświetlania obiektów."
+			},
+			{
+				"name": "OnAlignPosition",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy obiekt z niestandardowym wyrównaniem jest wyrównywany."
+			},
+			{
+				"name": "OnDockDrop",
+				"accessModifier": "protected",
+				"description": "Uruchamiany przy dokowaniu innej kontrolki do kontrolki."
+			},
+			{
+				"name": "OnDockOver",
+				"accessModifier": "protected",
+				"description": "Uruchamiany, gdy inna kontrolka jest przeciągana nad kontrolką."
+			},
+			{
+				"name": "OnEnter",
+				"accessModifier": "protected",
+				"description": "Wywoływany przy otrzymaniu fokusu przez kontrolkę."
+			},
+			{
+				"name": "OnExit",
+				"accessModifier": "protected",
+				"description": "Wywoływany przy utracie fokusu przez kontrolkę."
+			},
+			{
+				"name": "OnGetSiteInfo",
+				"accessModifier": "protected",
+				"description": "Zwraca informacje o dokowaniu kontrolki."
+			},
+			{
+				"name": "OnKeyDown",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik wciśnie klawisz, a kontrolka posiada fokus."
+			},
+			{
+				"name": "OnKeyPress",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy użytkownik wciśnie klawisz."
+			},
+			{
+				"name": "OnKeyUp",
+				"accessModifier": "protected"
+			},
+			{
+				"name": "OnUnDock",
+				"accessModifier": "protected",
+				"description": "Wywoływany przy próbie oddokowania kontrolki zdokowanej to kontrolki ."
+			}
+		]
+	},
+	{
+		"class": "TCustomEdit",
+		"events": [
+			{
+				"name": "OnChange",
+				"accessModifier": "protected",
+				"description": "Wywoływany, gdy tekst dla kontrolki edycji mógł się zmienić."
+			}
+		]
+	},
+	{
+		"class": "TEdit",
+		"events": []
+	}
+]
